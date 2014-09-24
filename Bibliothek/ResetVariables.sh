@@ -99,6 +99,7 @@ TMP_assume_isolated=$assume_isolated && [[ -n "$assume_isolated" ]] && TMP_assum
 TMP_input_dft=$input_dft && [[ -n "$input_dft" ]] && TMP_input_dft="'$input_dft'"
 TMP_screening_parameter=0.2 && [[ -n "$screening_parameter" ]] && TMP_screening_parameter="$screening_parameter"
 TMP_esomo=$set_esomo
+TMP_SIGMA=$SIGMA
 EOF
 
 }

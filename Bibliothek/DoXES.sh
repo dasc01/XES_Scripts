@@ -107,7 +107,7 @@ cat > $INPUT <<EOFXES
   Nener=5000
   Emin=-40
   Emax=10
-  broadening=0.2
+  broadening=${TMP_SIGMA}
   DeltaE=${Delta}
   chapprox='GS'
   readcorerep=.true.,   
