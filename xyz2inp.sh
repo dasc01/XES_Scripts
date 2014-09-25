@@ -152,6 +152,9 @@ NELEC=0.0
 for i in `seq 1 $NAT` ; do
   NELEC=`echo "($NELEC + ${Zion[${AtomType[$i]}]})" | bc`
 done
+if [[ -n $tot_charge ]] ; then
+  NELEC=`echo "$NELEC - ( $tot_charge )" | bc -l` ;
+fi
 # Determine the number of bands
 NBND1=`echo "($NELEC*0.5*1.5)/1" | bc`
 NBND2=`echo "($NELEC*0.5)/1+4" | bc`
